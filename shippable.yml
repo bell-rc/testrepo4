@@ -1,0 +1,17 @@
+# Language setting
+language: node_js
+
+# Version number
+node_js:
+  #- 8.1   
+  - 6.11
+
+build:
+  ci:
+    - echo "Hello!"
+    - node --version
+    - lsb_release -a
+    - docker --version
+    - docker info
+    - docker ps
+    
